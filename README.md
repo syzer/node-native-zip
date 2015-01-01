@@ -28,7 +28,7 @@ There are two ways to feed files into a new .zip file. Either by adding `Buffer`
 an array of files.
 
 ### Adding Buffer objects
-
+```js
     var fs = require("fs");
     var zip = require("node-native-zip");
     
@@ -40,7 +40,7 @@ an array of files.
     fs.writeFile("./test1.zip", buffer, function () {
         console.log("Finished");
     });
-    
+ 
 ### Adding files from the file system
 
     var fs = require("fs");
@@ -60,7 +60,7 @@ an array of files.
             console.log("Finished");
         });
     });
-    
+```    
 ## API Reference
 
 There are three API methods:
